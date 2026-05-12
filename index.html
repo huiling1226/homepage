@@ -4,232 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huiling Li - Homepage</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #ffffff;
-        }
-        a { color: #00428a; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        h1, h2, h3 { color: #002060; }
-        h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; }
-        h2 { border-bottom: 2px solid #002060; padding-bottom: 0.3rem; margin-top: 2rem; font-size: 1.4rem; text-transform: uppercase; }
-        h3 { font-size: 1.1rem; margin-top: 1.5rem; }
-        
-        /* Header & Intro Section */
-        .profile-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-            gap: 2rem;
-        }
-        .profile-text {
-            flex: 1;
-        }
-        .profile-subtitle {
-            font-size: 1.05rem;
-            margin-bottom: 1rem;
-            color: #444;
-        }
-        .contact-info {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-        .profile-photo img {
-            width: 160px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 4px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        /* Bio & Research Text */
-        .bio-text {
-            text-align: justify;
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        .bio-text p {
-            margin-bottom: 1rem;
-        }
-        
-        ul.research-list {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        ul.research-list li {
-            margin-bottom: 0.6rem;
-            text-align: justify;
-        }
-
-        /* Publications List */
-        ul.pub-list { list-style-type: decimal; padding-left: 1.5rem; }
-        ul.pub-list li { margin-bottom: 0.8rem; text-align: justify; }
-        
-        /* Misc Lists */
-        ul.bullet-list { padding-left: 1.5rem; }
-        ul.bullet-list li { margin-bottom: 0.5rem; }
-
-        html { scroll-behavior: smooth; }
-        .site-nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 0.75rem 1.25rem;
-            margin: -2rem -2rem 1.75rem -2rem;
-            padding: 0.85rem 2rem;
-            background: #fff;
-            border-bottom: 2px solid #002060;
-            box-shadow: 0 2px 8px rgba(0, 32, 96, 0.06);
-        }
-        .site-nav a {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #002060;
-        }
-        .site-nav a:hover { color: #00428a; }
-        main > section[id] { scroll-margin-top: 4rem; }
-
-        @media (max-width: 650px) {
-            .profile-container { flex-direction: column-reverse; align-items: center; text-align: center; }
-            .bio-text, ul.research-list li, ul.pub-list li { text-align: left; }
-            .site-nav { justify-content: center; margin: -2rem -2rem 1.5rem -2rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
 
     <nav class="site-nav" aria-label="Primary">
-        <a href="#home">Huiling's Homepage</a>
-        <a href="#publications">Publications</a>
-        <a href="#academic-services">Academic Services</a>
-        <a href="#teaching">Teaching</a>
+        <a href="index.html" aria-current="page">Huiling's Homepage</a>
+        <a href="publications.html">Publications</a>
+        <a href="academic-services.html">Academic Services</a>
+        <a href="teaching.html">Teaching</a>
     </nav>
 
     <main>
-    <section id="home">
-    <header class="profile-container">
-        <div class="profile-text">
-            <h1>Huiling Li</h1>
-            <div class="profile-subtitle">
-                <strong>PhD Student</strong> · Department of Computer Science, Hong Kong Baptist University
+        <header class="profile-container">
+            <div class="profile-text">
+                <h1>Huiling Li</h1>
+                <div class="profile-subtitle">
+                    <strong>PhD Student</strong> · Department of Computer Science, Hong Kong Baptist University
+                </div>
+                <div class="contact-info">
+                    Hong Kong, China<br>
+                    cshlli@comp.hkbu.edu.hk | <a href="https://scholar.google.com/citations?user=rLLsIUsAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+                </div>
             </div>
-            <div class="contact-info">
-                Hong Kong, China<br>
-                cshlli@comp.hkbu.edu.hk | <a href="https://scholar.google.com/citations?user=rLLsIUsAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+            <div class="profile-photo">
+                <img src="lihuiling.jpg" alt="Huiling Li">
             </div>
-        </div>
-        <div class="profile-photo">
-            <!-- 确保你的图片名为 lihuiling.jpg 并和本文件放在同一目录下 -->
-            <img src="lihuiling.jpg" alt="Huiling Li">
-        </div>
-    </header>
+        </header>
 
         <section class="bio-text">
             <p>I am a PhD student in the <strong><a href="https://www.comp.hkbu.edu.hk/" target="_blank" rel="noopener noreferrer">Department of Computer Science</a></strong> at <strong><a href="https://www.hkbu.edu.hk/" target="_blank" rel="noopener noreferrer">Hong Kong Baptist University (HKBU)</a></strong>, advised by <strong><a href="https://www.comp.hkbu.edu.hk/~xujl/" target="_blank" rel="noopener noreferrer">Prof. Jianliang Xu</a></strong>. Prior to this, I received my M.Eng. in Computer Science and Technology (advised by <strong><a href="https://zzudb.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yafei Li</a></strong>) and my B.Eng. in Software Engineering from <strong><a href="https://www.zzu.edu.cn/" target="_blank" rel="noopener noreferrer">Zhengzhou University</a></strong> in 2024 and 2021, respectively, where I was advised by <strong><a href="https://zzudb.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yafei Li</a></strong> during my master's studies.</p>
-            
+
             <p>My research focuses on vector database and spatial data management. I am particularly interested in <strong>Vector Databases & ANNS</strong>.</p>
-            
+
             <p>My work has been published at database, AI, and data mining venues including <strong>SIGMOD</strong>, <strong>PVLDB</strong>, <strong>ICDE</strong>, <strong>AAAI</strong>, and <strong>IEEE TMC</strong>. I am always open to insightful discussions and research collaborations in the above areas.</p>
         </section>
 
         <section aria-labelledby="selected-pubs-heading">
             <h2 id="selected-pubs-heading">Selected Publications</h2>
-            <ul id="selected-pub-list" class="pub-list">
-                <!-- First-author ICDE and TMC entries from publications.json -->
-            </ul>
-        </section>
-    </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            
-            <h3>Conference Proceedings</h3>
-            <ul id="conf-list" class="pub-list">
-                <!-- Data injected by JavaScript from publications.json -->
-            </ul>
-
-            <h3>Journal Articles</h3>
-            <ul id="journal-list" class="pub-list">
-                <!-- Data injected by JavaScript from publications.json -->
-            </ul>
-        </section>
-
-        <section id="academic-services">
-            <h2>Academic Services</h2>
-            <ul class="bullet-list">
-                <li><strong>PC Member:</strong> AAAI</li>
-                <li><strong>Reviewer:</strong> FCS, EAAI</li>
-            </ul>
-        </section>
-
-        <section id="teaching">
-            <h2>Teaching</h2>
-            <ul class="bullet-list">
-                <li><strong>Teaching Assistant:</strong> Database Systems, <a href="https://www.hkbu.edu.hk/" target="_blank" rel="noopener noreferrer">Hong Kong Baptist University</a></li>
-            </ul>
+            <ul id="selected-pub-list" class="pub-list"></ul>
         </section>
     </main>
 
-    <!-- JavaScript to load publications from JSON -->
-    <script>
-        function pubHtmlConference(pub) {
-            return `${pub.authors}, "${pub.title}", in <em>${pub.venue}</em>, ${pub.location}.`;
-        }
-        function pubHtmlJournal(pub) {
-            return `${pub.authors}, "${pub.title}", <em>${pub.venue}</em>, ${pub.location}.`;
-        }
-
-        fetch('publications.json')
-            .then(response => response.json())
-            .then(data => {
-                const icdeFirstAuthor = data.conferences.filter(pub =>
-                    /ICDE/i.test(pub.venue) &&
-                    /^\s*<strong>Huiling Li<\/strong>/.test(pub.authors)
-                );
-                const tmcPapers = data.journals.filter(pub => /IEEE Transactions on Mobile Computing|TMC/i.test(pub.venue));
-
-                const selectedList = document.getElementById('selected-pub-list');
-                [...icdeFirstAuthor, ...tmcPapers].forEach(pub => {
-                    const li = document.createElement('li');
-                    const isConference = data.conferences.includes(pub);
-                    li.innerHTML = isConference ? pubHtmlConference(pub) : pubHtmlJournal(pub);
-                    selectedList.appendChild(li);
-                });
-
-                const confList = document.getElementById('conf-list');
-                data.conferences.forEach(pub => {
-                    const li = document.createElement('li');
-                    li.innerHTML = pubHtmlConference(pub);
-                    confList.appendChild(li);
-                });
-
-                const journalList = document.getElementById('journal-list');
-                data.journals.forEach(pub => {
-                    const li = document.createElement('li');
-                    li.innerHTML = pubHtmlJournal(pub);
-                    journalList.appendChild(li);
-                });
-            })
-            .catch(error => {
-                console.error('Error loading publications:', error);
-                const msg = "<li>Failed to load publications. Please check your publications.json file.</li>";
-                document.getElementById('conf-list').innerHTML = msg;
-                document.getElementById('journal-list').innerHTML = msg;
-                const sel = document.getElementById('selected-pub-list');
-                if (sel) sel.innerHTML = msg;
-            });
-    </script>
+    <script src="publications.js"></script>
 </body>
 </html>
