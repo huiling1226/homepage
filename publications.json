@@ -27,19 +27,19 @@
     {
       "authors": "Qingshun Wu, Yafei Li, <strong>Huiling Li</strong>, Di Zhang, Guanglei Zhu",
       "title": "AMRAS: A Visual Analysis System for Spatial Crowdsourcing",
-      "venue": "Proc. of the VLDB Endowment (<strong>PVLDB '22</strong>)",
+      "venue": "Proc. of the VLDB Endowment (<strong>PVLDB '22, Demo Track</strong>)",
       "location": "Sydney, Australia, 15(12): 3690-3693, 2022"
     },
     {
       "authors": "Yafei Li, Lei Gao, Haobo Sun, <strong>Huiling Li</strong>, Qingshun Wu",
       "title": "PRID: An Efficient Pub/Sub Ride Hitching System",
-      "venue": "Proc. of the ACM CIKM (<strong>CIKM '22</strong>)",
+      "venue": "Proc. of the ACM CIKM (<strong>CIKM '22, Demo Track</strong>)",
       "location": "Atlanta, GA, USA, 2022"
     },
     {
       "authors": "<strong>Huiling Li</strong>, Lei Gao, Hua Wang, Mingliang Xu, Yafei Li",
       "title": "Human-in-the-loop Real-time Task Allocation",
-      "venue": "Proc. of the IEEE MDM (MDM '22)",
+      "venue": "Proc. of the IEEE MDM (<strong>MDM '22</strong>)",
       "location": "Paphos, Cyprus, 2022"
     }
   ],
