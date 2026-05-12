@@ -3,93 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Li Huiling - Homepage</title>
+    <title>Huiling Li - Homepage</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 900px;
+            color: #222;
+            max-width: 850px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: #fafafa;
+            background-color: #ffffff;
         }
-        a { color: #002060; text-decoration: none; }
+        a { color: #00428a; text-decoration: none; }
         a:hover { text-decoration: underline; }
         h1, h2, h3 { color: #002060; }
-        h2 { border-bottom: 2px solid #002060; padding-bottom: 0.3rem; margin-top: 2rem; font-size: 1.5rem; }
-        h3 { font-size: 1.2rem; margin-top: 1.5rem; }
+        h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; }
+        h2 { border-bottom: 2px solid #002060; padding-bottom: 0.3rem; margin-top: 2rem; font-size: 1.4rem; text-transform: uppercase; }
+        h3 { font-size: 1.1rem; margin-top: 1.5rem; }
         
-        .header-container {
+        /* Header & Intro Section */
+        .profile-container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 2rem;
+            gap: 2rem;
         }
-        .info h1 { margin: 0 0 0.5rem 0; font-size: 2.5rem; }
-        .info p { margin: 0.2rem 0; font-size: 1.1rem; }
-        .photo img {
-            width: 150px;
-            height: 200px;
+        .profile-text {
+            flex: 1;
+        }
+        .profile-subtitle {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        .contact-info {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .profile-photo img {
+            width: 160px;
+            height: 220px;
             object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .section-item { margin-bottom: 1rem; }
-        .section-item strong { display: block; font-size: 1.1rem; }
-        .section-item span { color: #666; float: right; }
-        .section-item em { display: block; color: #555; }
+        /* Bio & Research Text */
+        .bio-text {
+            text-align: justify;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .bio-text p {
+            margin-bottom: 1rem;
+        }
         
+        ul.research-list {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul.research-list li {
+            margin-bottom: 0.6rem;
+            text-align: justify;
+        }
+
+        /* Publications List */
         ul.pub-list { list-style-type: decimal; padding-left: 1.5rem; }
-        ul.pub-list li { margin-bottom: 0.8rem; }
+        ul.pub-list li { margin-bottom: 0.8rem; text-align: justify; }
+        
+        /* Misc Lists */
         ul.bullet-list { padding-left: 1.5rem; }
         ul.bullet-list li { margin-bottom: 0.5rem; }
 
-        @media (max-width: 600px) {
-            .header-container { flex-direction: column-reverse; align-items: flex-start; }
-            .photo { margin-bottom: 1rem; }
-            .section-item span { float: none; display: block; }
+        @media (max-width: 650px) {
+            .profile-container { flex-direction: column-reverse; align-items: center; text-align: center; }
+            .bio-text, ul.research-list li, ul.pub-list li { text-align: left; }
         }
     </style>
 </head>
 <body>
 
-    <header class="header-container">
-        <div class="info">
-            <h1>Li Huiling</h1>
-            <p>PhD Student, Hong Kong Baptist University</p>
-            <p>Hong Kong, China</p>
-            <p><a href="mailto:iehuilingli@outlook.com">iehuilingli@outlook.com</a> | <a href="https://scholar.google.com/citations?user=rLLsIUsAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a></p>
+    <header class="profile-container">
+        <div class="profile-text">
+            <h1>Huiling Li</h1>
+            <div class="profile-subtitle">
+                <strong>PhD Student</strong> · Department of Computer Science, Hong Kong Baptist University · Advised by <strong>Prof. Jianliang Xu</strong>
+            </div>
+            <div class="contact-info">
+                Hong Kong, China<br>
+                iehuilingli [at] outlook.com | <a href="https://scholar.google.com/citations?user=rLLsIUsAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+            </div>
         </div>
-        <div class="photo">
-            <!-- 请确保图片 lihuiling.jpg 放在项目同级目录下 -->
-            <img src="lihuiling.jpg" alt="Li Huiling">
+        <div class="profile-photo">
+            <!-- 确保你的图片名为 lihuiling.jpg 并和本文件放在同一目录下 -->
+            <img src="lihuiling.jpg" alt="Huiling Li">
         </div>
     </header>
 
     <main>
-        <section>
-            <h2>Education</h2>
-            <div class="section-item">
-                <strong>Hong Kong Baptist University <span>Sep 2024 -- Present</span></strong>
-                <em>PhD in Computer Science (Supervisor: Jianliang Xu)</em>
-            </div>
-            <div class="section-item">
-                <strong>Zhengzhou University <span>Sep 2021 -- Jul 2024</span></strong>
-                <em>M.Eng. in Computer Science and Technology (Supervisor: Yafei Li)</em>
-            </div>
-            <div class="section-item">
-                <strong>Zhengzhou University <span>Sep 2017 -- Jul 2021</span></strong>
-                <em>B.Eng. in Software Engineering (Outstanding Engineer Program)</em>
-            </div>
-        </section>
-
-        <section>
-            <h2>Research Interests</h2>
-            <ul class="bullet-list">
-                <li>Approximate Nearest Neighbor Search, Vector Database Optimization, Spatial Data Management.</li>
+        <section class="bio-text">
+            <p>I am a PhD student in the <strong>Department of Computer Science</strong> at <strong>Hong Kong Baptist University (HKBU)</strong>, advised by <strong>Prof. Jianliang Xu</strong>. Before joining HKBU, I received my M.Eng. in Computer Science and Technology and my B.Eng. in Software Engineering from <strong>Zhengzhou University</strong> in 2024 and 2021, respectively, where I was advised by Prof. Yafei Li during my master's studies.</p>
+            
+            <p><strong>Research.</strong> My research focuses on <strong>database systems</strong> and <strong>spatial data management</strong>, with a strong emphasis on designing efficient algorithms and index structures for large-scale data processing. I am particularly interested in:</p>
+            
+            <ul class="research-list">
+                <li><strong>Vector Databases & ANNS</strong> — designing highly efficient, disk-based index structures (e.g., monotonic graph indexes) and representative sampling algorithms for large-scale high-dimensional Approximate Nearest Neighbor Search.</li>
+                <li><strong>Spatial Crowdsourcing</strong> — developing mobility prediction-aware, fairness-guaranteed task assignment algorithms, and dynamic ridesharing optimization for smart city mobility services.</li>
+                <li><strong>Human-in-the-loop Systems</strong> — building visual analysis tools and real-time task allocation systems to bridge human intelligence with complex spatial data management.</li>
             </ul>
+            
+            <p>My work has been published at top-tier database, AI, and data mining venues including <strong>SIGMOD</strong>, <strong>PVLDB</strong>, <strong>ICDE</strong>, <strong>AAAI</strong>, and <strong>IEEE TMC</strong>. I am always open to insightful discussions and research collaborations in the above areas — please feel free to reach out.</p>
         </section>
 
         <section>
@@ -97,12 +123,12 @@
             
             <h3>Conference Proceedings</h3>
             <ul id="conf-list" class="pub-list">
-                <!-- Data injected by JavaScript -->
+                <!-- Data injected by JavaScript from publications.json -->
             </ul>
 
             <h3>Journal Articles</h3>
             <ul id="journal-list" class="pub-list">
-                <!-- Data injected by JavaScript -->
+                <!-- Data injected by JavaScript from publications.json -->
             </ul>
         </section>
 
@@ -137,7 +163,10 @@
                     journalList.appendChild(li);
                 });
             })
-            .catch(error => console.error('Error loading publications:', error));
+            .catch(error => {
+                console.error('Error loading publications:', error);
+                document.getElementById('conf-list').innerHTML = "<li>Failed to load publications. Please check your publications.json file.</li>";
+            });
     </script>
 </body>
 </html>
