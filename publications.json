@@ -1,0 +1,60 @@
+{
+  "conferences": [
+    {
+      "authors": "Zheng Wu, Yitong Song, Xuliang Zhu, <strong>Huiling Li</strong>, Jianliang Xu, Xin Huang",
+      "title": "Balancing Global and Local: Representative Sampling for Large-Scale Vector Data",
+      "venue": "Proc. of the ACM SIGMOD Int'l Conf. on Management of Data (<strong>SIGMOD '26</strong>)",
+      "location": "Bengaluru, India, 2026"
+    },
+    {
+      "authors": "<strong>Huiling Li</strong>, Xin Huang, Byron Choi, Jianliang Xu",
+      "title": "BAMG: A Block-Aware Monotonic Graph Index for Disk-Based Approximate Nearest Neighbor Search",
+      "venue": "Proc. of the 41st IEEE International Conference on Data Engineering (<strong>ICDE '26</strong>)",
+      "location": "Montreal, Canada, 2026"
+    },
+    {
+      "authors": "Yafei Li, Wei Chen, Jinxing Yan, <strong>Huiling Li</strong>, Lei Gao, Mingliang Xu",
+      "title": "Gradient-Guided Credit Assignment and Joint Optimization for Dependency-Aware Spatial Crowdsourcing",
+      "venue": "The 39th Annual AAAI Conference on Artificial Intelligence (<strong>AAAI '25</strong>)",
+      "location": "Philadelphia, PA, USA, 2025"
+    },
+    {
+      "authors": "<strong>Huiling Li</strong>, Yafei Li, Wei Chen, Shuo He, Mingliang Xu, Jianliang Xu",
+      "title": "Effective Task Assignment in Mobility Prediction-Aware Spatial Crowdsourcing",
+      "venue": "Proc. of the IEEE International Conference on Data Engineering (<strong>ICDE '25</strong>)",
+      "location": "Hong Kong, China, 2025"
+    },
+    {
+      "authors": "Qingshun Wu, Yafei Li, <strong>Huiling Li</strong>, Di Zhang, Guanglei Zhu",
+      "title": "AMRAS: A Visual Analysis System for Spatial Crowdsourcing",
+      "venue": "Proc. of the VLDB Endowment (<strong>PVLDB '22</strong>)",
+      "location": "Sydney, Australia, 15(12): 3690-3693, 2022"
+    },
+    {
+      "authors": "Yafei Li, Lei Gao, Haobo Sun, <strong>Huiling Li</strong>, Qingshun Wu",
+      "title": "PRID: An Efficient Pub/Sub Ride Hitching System",
+      "venue": "Proc. of the ACM CIKM (<strong>CIKM '22</strong>)",
+      "location": "Atlanta, GA, USA, 2022"
+    },
+    {
+      "authors": "<strong>Huiling Li</strong>, Lei Gao, Hua Wang, Mingliang Xu, Yafei Li",
+      "title": "Human-in-the-loop Real-time Task Allocation",
+      "venue": "Proc. of the IEEE MDM (<strong>Best Paper Award of MUST Workshop</strong>)",
+      "location": "Paphos, Cyprus, 2022"
+    }
+  ],
+  "journals": [
+    {
+      "authors": "Yafei Li, <strong>Huiling Li</strong>, Baolong Mei, Xin Huang, Jianliang Xu, Mingliang Xu",
+      "title": "Fairness-Guaranteed Task Assignment for Crowdsourced Mobility Services",
+      "venue": "IEEE Transactions on Mobile Computing (<strong>TMC</strong>)",
+      "location": "23(5): 5385-5400, 2024"
+    },
+    {
+      "authors": "Yafei Li, <strong>Huiling Li</strong>, Xin Huang, Jianliang Xu, Yu Han, Mingliang Xu",
+      "title": "Utility-Aware Dynamic Ridesharing in Spatial Crowdsourcing",
+      "venue": "IEEE Transactions on Mobile Computing (<strong>TMC</strong>)",
+      "location": "23(2): 1066-1079, 2024"
+    }
+  ]
+}
