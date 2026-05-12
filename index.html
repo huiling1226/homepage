@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li Huiling - Homepage</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+        a { color: #002060; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1, h2, h3 { color: #002060; }
+        h2 { border-bottom: 2px solid #002060; padding-bottom: 0.3rem; margin-top: 2rem; font-size: 1.5rem; }
+        h3 { font-size: 1.2rem; margin-top: 1.5rem; }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .info h1 { margin: 0 0 0.5rem 0; font-size: 2.5rem; }
+        .info p { margin: 0.2rem 0; font-size: 1.1rem; }
+        .photo img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .section-item { margin-bottom: 1rem; }
+        .section-item strong { display: block; font-size: 1.1rem; }
+        .section-item span { color: #666; float: right; }
+        .section-item em { display: block; color: #555; }
+        
+        ul.pub-list { list-style-type: decimal; padding-left: 1.5rem; }
+        ul.pub-list li { margin-bottom: 0.8rem; }
+        ul.bullet-list { padding-left: 1.5rem; }
+        ul.bullet-list li { margin-bottom: 0.5rem; }
+
+        @media (max-width: 600px) {
+            .header-container { flex-direction: column-reverse; align-items: flex-start; }
+            .photo { margin-bottom: 1rem; }
+            .section-item span { float: none; display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="info">
+            <h1>Li Huiling</h1>
+            <p>PhD Student, Hong Kong Baptist University</p>
+            <p>Hong Kong, China</p>
+            <p><a href="mailto:iehuilingli@outlook.com">iehuilingli@outlook.com</a> | <a href="https://scholar.google.com/citations?user=rLLsIUsAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a></p>
+        </div>
+        <div class="photo">
+            <!-- 请确保图片 lihuiling.jpg 放在项目同级目录下 -->
+            <img src="lihuiling.jpg" alt="Li Huiling">
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Education</h2>
+            <div class="section-item">
+                <strong>Hong Kong Baptist University <span>Sep 2024 -- Present</span></strong>
+                <em>PhD in Computer Science (Supervisor: Jianliang Xu)</em>
+            </div>
+            <div class="section-item">
+                <strong>Zhengzhou University <span>Sep 2021 -- Jul 2024</span></strong>
+                <em>M.Eng. in Computer Science and Technology (Supervisor: Yafei Li)</em>
+            </div>
+            <div class="section-item">
+                <strong>Zhengzhou University <span>Sep 2017 -- Jul 2021</span></strong>
+                <em>B.Eng. in Software Engineering (Outstanding Engineer Program)</em>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research Interests</h2>
+            <ul class="bullet-list">
+                <li>Approximate Nearest Neighbor Search, Vector Database Optimization, Spatial Data Management.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            
+            <h3>Conference Proceedings</h3>
+            <ul id="conf-list" class="pub-list">
+                <!-- Data injected by JavaScript -->
+            </ul>
+
+            <h3>Journal Articles</h3>
+            <ul id="journal-list" class="pub-list">
+                <!-- Data injected by JavaScript -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Academic Services & Teaching</h2>
+            <ul class="bullet-list">
+                <li><strong>PC Member:</strong> AAAI</li>
+                <li><strong>Reviewer:</strong> FCS, EAAI</li>
+                <li><strong>Teaching Assistant:</strong> Database Systems, Hong Kong Baptist University</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- JavaScript to load publications from JSON -->
+    <script>
+        fetch('publications.json')
+            .then(response => response.json())
+            .then(data => {
+                // Render Conferences
+                const confList = document.getElementById('conf-list');
+                data.conferences.forEach(pub => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `${pub.authors}, "${pub.title}", in <em>${pub.venue}</em>, ${pub.location}.`;
+                    confList.appendChild(li);
+                });
+
+                // Render Journals
+                const journalList = document.getElementById('journal-list');
+                data.journals.forEach(pub => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `${pub.authors}, "${pub.title}", <em>${pub.venue}</em>, ${pub.location}.`;
+                    journalList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error loading publications:', error));
+    </script>
+</body>
+</html>
