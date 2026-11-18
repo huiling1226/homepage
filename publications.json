@@ -5,48 +5,54 @@
       "title": "Disk-Resident Graph ANN Search: An Experimental Evaluation",
       "url": "https://arxiv.org/abs/2603.01779",
       "venue": "Proc. of the VLDB Endowment (<strong>PVLDB</strong>)",
-      "location": "Accepted",
-      "selected": true
+      "location": "Accepted"
     },
     {
       "authors": "Zheng Wu, Yitong Song, Xuliang Zhu, <strong>Huiling Li</strong>, Jianliang Xu, Xin Huang",
       "title": "Balancing Global and Local: Representative Sampling for Large-Scale Vector Data",
+      "url": "https://doi.org/10.1145/3802019",
       "venue": "Proc. of the ACM SIGMOD Int'l Conf. on Management of Data (<strong>SIGMOD '26</strong>)",
       "location": "Bengaluru, India, 2026"
     },
     {
       "authors": "<strong>Huiling Li</strong>, Xin Huang, Byron Choi, Jianliang Xu",
       "title": "BAMG: A Block-Aware Monotonic Graph Index for Disk-Based Approximate Nearest Neighbor Search",
+      "url": "https://doi.org/10.1109/ICDE65706.2026.00252",
       "venue": "Proc. of the 41st IEEE International Conference on Data Engineering (<strong>ICDE '26</strong>)",
       "location": "Montreal, Canada, 2026"
     },
     {
       "authors": "Yafei Li, Wei Chen, Jinxing Yan, <strong>Huiling Li</strong>, Lei Gao, Mingliang Xu",
       "title": "Gradient-Guided Credit Assignment and Joint Optimization for Dependency-Aware Spatial Crowdsourcing",
+      "url": "https://doi.org/10.1609/aaai.v39i13.33566",
       "venue": "The 39th Annual AAAI Conference on Artificial Intelligence (<strong>AAAI '25</strong>)",
       "location": "Philadelphia, PA, USA, 2025"
     },
     {
       "authors": "<strong>Huiling Li</strong>, Yafei Li, Wei Chen, Shuo He, Mingliang Xu, Jianliang Xu",
       "title": "Effective Task Assignment in Mobility Prediction-Aware Spatial Crowdsourcing",
+      "url": "https://doi.org/10.1109/ICDE65448.2025.00136",
       "venue": "Proc. of the IEEE International Conference on Data Engineering (<strong>ICDE '25</strong>)",
       "location": "Hong Kong, China, 2025"
     },
     {
       "authors": "Qingshun Wu, Yafei Li, <strong>Huiling Li</strong>, Di Zhang, Guanglei Zhu",
       "title": "AMRAS: A Visual Analysis System for Spatial Crowdsourcing",
+      "url": "https://doi.org/10.14778/3554821.3554876",
       "venue": "Proc. of the VLDB Endowment (<strong>PVLDB '22, Demo Track</strong>)",
       "location": "Sydney, Australia, 15(12): 3690-3693, 2022"
     },
     {
       "authors": "Yafei Li, Lei Gao, Haobo Sun, <strong>Huiling Li</strong>, Qingshun Wu",
       "title": "PRID: An Efficient Pub/Sub Ride Hitching System",
+      "url": "https://doi.org/10.1145/3511808.3557213",
       "venue": "Proc. of the ACM CIKM (<strong>CIKM '22, Demo Track</strong>)",
       "location": "Atlanta, GA, USA, 2022"
     },
     {
       "authors": "<strong>Huiling Li</strong>, Lei Gao, Hua Wang, Mingliang Xu, Yafei Li",
       "title": "Human-in-the-loop Real-time Task Allocation",
+      "url": "https://doi.org/10.1109/MDM55031.2022.00109",
       "venue": "Proc. of the IEEE MDM (<strong>MDM '22</strong>)",
       "location": "Paphos, Cyprus, 2022"
     }
@@ -57,18 +63,19 @@
       "title": "Disk-Resident Vector Similarity Search: A Survey",
       "url": "https://doi.org/10.1109/TKDE.2026.3731393",
       "venue": "IEEE Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>)",
-      "location": "2026",
-      "selected": true
+      "location": "2026"
     },
     {
       "authors": "Yafei Li, <strong>Huiling Li</strong>, Baolong Mei, Xin Huang, Jianliang Xu, Mingliang Xu",
       "title": "Fairness-Guaranteed Task Assignment for Crowdsourced Mobility Services",
+      "url": "https://doi.org/10.1109/TMC.2023.3310591",
       "venue": "IEEE Transactions on Mobile Computing (<strong>TMC</strong>)",
       "location": "23(5): 5385-5400, 2024"
     },
     {
       "authors": "Yafei Li, <strong>Huiling Li</strong>, Xin Huang, Jianliang Xu, Yu Han, Mingliang Xu",
       "title": "Utility-Aware Dynamic Ridesharing in Spatial Crowdsourcing",
+      "url": "https://doi.org/10.1109/TMC.2022.3232215",
       "venue": "IEEE Transactions on Mobile Computing (<strong>TMC</strong>)",
       "location": "23(2): 1066-1079, 2024"
     }
