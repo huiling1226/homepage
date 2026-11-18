@@ -1,6 +1,14 @@
 {
   "conferences": [
     {
+      "authors": "Xiaoyu Chen, Jinxiu Qu, Yitong Song, Shuhang Lu, <strong>Huiling Li</strong>, Minghui Jiang, Wei Zhou, Jianliang Xu, Xuanhe Zhou, Fan Wu",
+      "title": "Disk-Resident Graph ANN Search: An Experimental Evaluation",
+      "url": "https://arxiv.org/abs/2603.01779",
+      "venue": "Proc. of the VLDB Endowment (<strong>PVLDB</strong>)",
+      "location": "Accepted",
+      "selected": true
+    },
+    {
       "authors": "Zheng Wu, Yitong Song, Xuliang Zhu, <strong>Huiling Li</strong>, Jianliang Xu, Xin Huang",
       "title": "Balancing Global and Local: Representative Sampling for Large-Scale Vector Data",
       "venue": "Proc. of the ACM SIGMOD Int'l Conf. on Management of Data (<strong>SIGMOD '26</strong>)",
@@ -44,6 +52,14 @@
     }
   ],
   "journals": [
+    {
+      "authors": "Yitong Song, <strong>Huiling Li</strong>, Zheng Wu, Lanjing Yi, Bojian Zhu, Xuanhe Zhou, Xin Huang, Jianliang Xu",
+      "title": "Disk-Resident Vector Similarity Search: A Survey",
+      "url": "https://doi.org/10.1109/TKDE.2026.3731393",
+      "venue": "IEEE Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>)",
+      "location": "2026",
+      "selected": true
+    },
     {
       "authors": "Yafei Li, <strong>Huiling Li</strong>, Baolong Mei, Xin Huang, Jianliang Xu, Mingliang Xu",
       "title": "Fairness-Guaranteed Task Assignment for Crowdsourced Mobility Services",

@@ -1,11 +1,15 @@
 (function () {
     'use strict';
 
+    function pubTitleHtml(pub) {
+        return pub.url ? `<a href="${pub.url}" target="_blank" rel="noopener noreferrer">${pub.title}</a>` : pub.title;
+    }
+
     function pubHtmlConference(pub) {
-        return `${pub.authors}, "${pub.title}", in <em>${pub.venue}</em>, ${pub.location}.`;
+        return `${pub.authors}, "${pubTitleHtml(pub)}", in <em>${pub.venue}</em>, ${pub.location}.`;
     }
     function pubHtmlJournal(pub) {
-        return `${pub.authors}, "${pub.title}", <em>${pub.venue}</em>, ${pub.location}.`;
+        return `${pub.authors}, "${pubTitleHtml(pub)}", <em>${pub.venue}</em>, ${pub.location}.`;
     }
 
     const page = document.body.dataset.page;
@@ -15,16 +19,16 @@
         .then(function (response) { return response.json(); })
         .then(function (data) {
             if (page === 'home') {
-                const icdeFirstAuthor = data.conferences.filter(function (pub) {
-                    return /ICDE/i.test(pub.venue) &&
-                        /^\s*<strong>Huiling Li<\/strong>/.test(pub.authors);
+                const selectedConferences = data.conferences.filter(function (pub) {
+                    return pub.selected === true || (/ICDE/i.test(pub.venue) &&
+                        /^\s*<strong>Huiling Li<\/strong>/.test(pub.authors));
                 });
-                const tmcPapers = data.journals.filter(function (pub) {
-                    return /IEEE Transactions on Mobile Computing|TMC/i.test(pub.venue);
+                const selectedJournals = data.journals.filter(function (pub) {
+                    return pub.selected === true || /IEEE Transactions on Mobile Computing|TMC/i.test(pub.venue);
                 });
                 const selectedList = document.getElementById('selected-pub-list');
                 if (selectedList) {
-                    [].concat(icdeFirstAuthor, tmcPapers).forEach(function (pub) {
+                    [].concat(selectedConferences, selectedJournals).forEach(function (pub) {
                         const li = document.createElement('li');
                         const isConference = data.conferences.indexOf(pub) !== -1;
                         li.innerHTML = isConference ? pubHtmlConference(pub) : pubHtmlJournal(pub);
