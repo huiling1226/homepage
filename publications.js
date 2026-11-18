@@ -15,7 +15,7 @@
     const page = document.body.dataset.page;
     if (page !== 'home' && page !== 'publications') return;
 
-    fetch('publications.json')
+    fetch('publications.json', { cache: 'no-cache' })
         .then(function (response) { return response.json(); })
         .then(function (data) {
             if (page === 'home') {
